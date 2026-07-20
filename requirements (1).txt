@@ -1,0 +1,31 @@
+# Core scientific stack
+numpy>=1.24
+scipy>=1.11
+pandas>=2.0
+
+# Genome-scale metabolic modelling / constraint-based analysis
+cobra>=0.29
+optlang>=1.8
+
+# LP solver used for all reported results (installed separately on some
+# platforms; see README "Installation" section)
+# glpk (system package, e.g. `apt install glpk-utils libglpk-dev`)
+# swiglpk>=5.0            # Python bindings used by optlang's glpk interface
+
+# Statistics
+statsmodels>=0.14        # OrderedModel (proportional-odds ordinal logistic regression)
+scikit-learn>=1.3        # RandomForestClassifier, cross_val, balanced_accuracy_score, f1_score
+
+# Topological data analysis (Phase C)
+ripser>=0.6.4
+persim>=0.3               # bottleneck distance between persistence diagrams
+
+# Plotting (synthetic-study combined figure)
+matplotlib>=3.7
+
+# Optional / only if you re-enable exact hit-and-run sampling or a
+# commercial solver — not required to reproduce the reported random-fba
+# results
+# gurobipy                # commercial solver (license required; hit a
+#                          # "model too large" error on the full community
+#                          # model with a size-limited license, see README)

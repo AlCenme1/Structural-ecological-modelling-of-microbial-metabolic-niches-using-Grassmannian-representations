@@ -1,0 +1,19 @@
+name: schubert-niches
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - numpy>=1.24
+  - scipy>=1.11
+  - pandas>=2.0
+  - matplotlib>=3.7
+  - cobra>=0.29            # pulls in optlang + glpk via conda-forge on most platforms
+  - glpk                    # LP solver used for all reported results (see README)
+  - statsmodels>=0.14       # OrderedModel (ordinal logistic regression)
+  - scikit-learn>=1.3       # RandomForestClassifier, cross-validation, scoring
+  - pip
+  - pip:
+      - ripser>=0.6.4       # persistent homology (Phase C)
+      - persim>=0.3         # bottleneck distance between persistence diagrams
+      # - gurobipy          # optional commercial solver; not required (see README)
