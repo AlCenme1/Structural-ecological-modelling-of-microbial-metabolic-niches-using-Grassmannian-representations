@@ -7,10 +7,6 @@ the Schubert-codimension classification framework applied to a ten-species
 community genome-scale metabolic model (GSMM) of a talasohaline hypersaline
 microbial community, referenced against the Santa Pola salinity gradient.
 
-> **TODO (before making the repo public / archiving on Zenodo):** rename the
-> placeholder script names below to match your actual filenames, remove any
-> script that does not correspond to a real file, and delete this notice.
-
 ## Repository structure
 
 ```
