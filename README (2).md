@@ -20,7 +20,6 @@ microbial community, referenced against the Santa Pola salinity gradient.
 ├── environment.yml
 ├── data/
 │   ├── community.xml            # original community GSMM (SBML L3, FBC v2)
-│   ├── community_fixed.xml       # after fixing duplicate fbc:label="G_spontaneous"
 │   └── santapola_abundancias.csv # Table 3.1 (16S rRNA relative abundances, Fernandez2014a)
 ├── src/
 │   ├── construir_bandera.py      # reference-flag construction (tiers by abundance trend,
@@ -105,7 +104,7 @@ libglpk-dev` first).
 
 ```bash
 # 1. Build the species-specific leave-one-out reference flags
-python src/construir_bandera.py --model data/community_fixed.xml \
+python src/construir_bandera.py --model data/community.xml \
     --abundancias data/santapola_abundancias.csv --out results/banderas/
 
 # 2. Phase A: flux sampling (random-fba) + epsilon sweep + ordinal regression
@@ -136,8 +135,7 @@ manuscript's Methods section, not a literal API reference.
 If you use this code or the accompanying community GSMM, please cite:
 
 > Centeno-Mejía, A. *Structural ecological modelling of microbial metabolic
-> niches using Grassmannian representations*. [[journal, year, DOI once
-> available](https://zenodo.org/me/uploads?q=&f=shared_with_me%3Afalse&l=list&p=1&s=10&sort=newest)].
+> niches using Grassmannian representations*. (https://zenodo.org/me/uploads?q=&f=shared_with_me%3Afalse&l=list&p=1&s=10&sort=newest).
 
 
 
