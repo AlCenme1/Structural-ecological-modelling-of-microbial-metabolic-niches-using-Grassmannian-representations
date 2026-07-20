@@ -136,13 +136,10 @@ manuscript's Methods section, not a literal API reference.
 If you use this code or the accompanying community GSMM, please cite:
 
 > Centeno-Mejía, A. *Structural ecological modelling of microbial metabolic
-> niches using Grassmannian representations*. [journal, year, DOI once
-> available].
+> niches using Grassmannian representations*. [[journal, year, DOI once
+> available](https://zenodo.org/me/uploads?q=&f=shared_with_me%3Afalse&l=list&p=1&s=10&sort=newest)].
 
-and the archived code release:
 
-> Centeno-Mejía, A. (2026). *[repository name]* (Version [x.y]) [Software].
-> Zenodo. https://doi.org/[DOI once available]
 
 ## License
 
